@@ -1,0 +1,72 @@
+body {
+    background: linear-gradient(-45deg, #E8CBC0, #fab95e,rgb(55, 255, 152),#636FA4, #a202ff);
+	background-size: 400% 400%;
+	animation: moveBackground 15s ease infinite;
+    width: 100%;
+	height: 100vh;
+    overflow: hidden;
+}
+
+
+.weatherDiv h1 {
+    position: absolute;
+    text-align: center;
+    font-size: 160px;
+    left: 31.5%;
+    font-family: fantasy;
+    color: white;
+}
+
+.weatherDiv h6{
+    position: absolute;
+    left: 63.5%;
+    font-size: 30px;
+    top: 29%;
+    background: -webkit-linear-gradient(125deg, #022cff, #3502ff, #af02ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    
+}
+
+
+.weatherDiv ul {
+    display: flex;
+    position: absolute;
+    top: 60vh;
+    left: 30px;
+}
+
+.weatherDiv ul h2{
+    margin-left: 50px;
+    width: 500px;
+    font-size: 25px;
+    color: white;
+}
+
+@keyframes moveBackground {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.text {
+    position: absolute;
+    width: 100vh;
+    height: 5vh;
+    left: 22.5%;
+    top: 45%;
+}
+
+button {
+    position: absolute;
+    width: 8vh;
+    height: 5vh;
+    left: 75%;
+    top: 45.5%;
+}
